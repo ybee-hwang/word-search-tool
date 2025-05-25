@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蜜蜂搞前端说是</title>
+</head>
+<body>
+    <!-- 盒子创建部分 -->
+    <div class="todo-app">
+        <div class="title">单词搜索</div>
+        <div class="todo-form">
+            <input class="todo-input" type="text" placeholder="输入您想知道的单词">
+            <div class="todo-bottom">搜索</div>
+        </div>
+    </div> <!-- 盒子创建部分 -->
+    <!----------------style部分---------------->
+   <style>
+ body {
+   background-color: #464850;
+ }  
+ /* 盒子样式 */
+  .todo-app{
+        margin-top: 40px;/*盒子上方外缩进*/
+        margin-left: 1%;
+        padding-top: 30px;/*盒子上方内缩进*/
+        box-sizing: border-box;/*锁住盒子的尺寸不受padding的影响*/
+        width: 98%;
+        height: 500px;
+        background-color: white;
+        border-radius: 5px;/*圆角*/
+    }  
+    .title{
+        /* 字体大小以及粗洗 */
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;/* 文本居中 */
+    }
+    .todo-form{
+        margin-top: 30px;
+        display: flex;
+        
+    }
+    .todo-bottom{
+        font-size: 18px;/* 字体大小 */
+        font-weight: 600; 
+        width:100px;/* 盒子大小 */
+        height:52px;
+        text-align: center;
+        line-height: 52px;/* 字行高 */
+         border-radius: 0 20px 20px 0;
+         background-color: #464850;
+         color: #ffff;
+         cursor: pointer;/* 鼠标放上去变手指 */
+    }
+    .todo-input{
+        padding-left: 15px;
+        border: 1px solid #dfe1e5;
+        outline: none;
+        width: 60%;
+        height: 50px;
+        margin-left: 1%;
+        border-radius: 20px 0 0 20px;
+    }
+</style>
+    <!----------------style部分---------------->
+</body>
+</html>
